@@ -10,10 +10,14 @@ c) What would the .iterator method return in this case?
 
 ```java
 public Iterator<E> iterator() {
-    // your code here
+    Iterator<Map.Entry<Integer, String>> iterator = graph.entrySet().iterator()
+
+    Map.Entry<N, List<N>> actualValue = iterator.next();
+    BreadthFirstGraphIterator<N> iterator = BreadthFirstGraphIterator<N>(this, actualValue.getKey());
+
+    return (Iterator<E>) iterator;
 }
 ```
 
-It would return an object of type Iterator, which would have methods such as next() in order to allow the iterable to be iterated over.
-
 d) What is the problem with this approach?
+Its not useful for the iterator to start at the same node and traverse the same way for the graphs purposes.
