@@ -21,7 +21,7 @@ import unsw.fruit.Orange;
  */
 class ArrayListSetTest {
 
-    /*@Test
+    @Test
     public void testSimpleIntegration() {
         Set<String> set = new ArrayListSet<String>();
         set.add("Hello");
@@ -107,5 +107,5 @@ class ArrayListSetTest {
         assertTrue(unionSet.contains(new Orange("Blood Orange")));
         assertEquals(3, unionSet.size());
         assertEquals(fruit1.union(fruit2), fruit2.union(fruit1));
-    }*/
+    }
 }

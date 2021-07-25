@@ -48,7 +48,7 @@ public class GraphTest {
         return graph;
     }
 
-    /*@Test
+    @Test
     public void testBFSStrings() {
         Graph<String> graph = setupGraphOfStrings();
 
@@ -130,5 +130,5 @@ public class GraphTest {
         assertEquals(4, iter2.next());
         assertEquals(6, iter2.next());
         assertFalse(iter2.hasNext());
-    }*/
+    }
 }
